@@ -1,4 +1,5 @@
-from main import Circle, Rectangle
+from main import Circle, Rectangle, Square
+
 print("###################################")
 print("# S H A P E   C A L C U L A T O R #")
 print("###################################\n")
@@ -26,6 +27,16 @@ while True:
         perimetr = Rectangle(length, width).perimetr()
 
         print(f"{area}\n{perimetr}\n")
+
+    elif shape.lower() == "square":
+
+        side = float(input("Magnitude of side: "))
+
+        area = Square(side).area()
+        perimetr = Square(side).perimetr()
+
+        print(f"{area}\n{perimetr}\n")
+
 
 
     elif shape.lower() == "exit":
